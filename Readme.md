@@ -1,265 +1,238 @@
 # 🦠 COVID-19 Data Analytics Project
 
-A comprehensive, intermediate-level Python project analyzing COVID-19 data through data collection, cleaning, exploratory data analysis (EDA), statistical analysis, and data visualization.
+A comprehensive **Python Data Analytics Project** that analyzes global COVID-19 data through **data collection, data cleaning, exploratory data analysis (EDA), statistical analysis, and data visualization**.
+
+This project demonstrates an end-to-end data analytics workflow using real-world data from the **disease.sh API**.
 
 ---
 
-## 📌 Project Overview
+# 📌 Project Overview
 
-This project provides a complete end-to-end data analytics pipeline for COVID-19 pandemic data. It fetches real-time data from the disease.sh API, performs thorough data cleaning and preprocessing, conducts exploratory data analysis, calculates key statistical metrics, creates professional visualizations, and generates actionable insights.
+The objective of this project is to transform raw COVID-19 data into meaningful insights using Python.
 
-The project demonstrates practical data analytics skills that employers seek, including data wrangling, statistical analysis, and data storytelling through visualizations.
+The project covers the complete data analysis process:
 
----
-
-## 🎯 Project Objectives
-
-1. **Data Collection** – Fetch real-time COVID-19 data from the disease.sh API.
-2. **Data Cleaning** – Handle missing values, remove duplicates, and format data correctly.
-3. **Exploratory Data Analysis (EDA)** – Understand dataset structure, statistics, and distributions.
-4. **Statistical Analysis** – Calculate total cases, deaths, recoveries, active cases, death rates, and recovery rates.
-5. **Data Visualization** – Create 6 different charts to visualize findings.
-6. **Analytical Questions** – Answer 8 key questions about the data.
-7. **Key Insights** – Generate meaningful conclusions and recommendations.
+- 📥 Data Collection
+- 🧹 Data Cleaning & Preprocessing
+- 📊 Exploratory Data Analysis (EDA)
+- 📈 Statistical Analysis
+- 📉 Data Visualization
+- 💡 Insight Generation
 
 ---
 
-## 🛠️ Technologies Used
+# 🎯 Project Objectives
+
+- Collect real-time COVID-19 data using an API.
+- Clean and preprocess the dataset.
+- Explore the dataset using EDA techniques.
+- Perform statistical analysis.
+- Create informative visualizations.
+- Answer important analytical questions.
+- Generate data-driven insights.
+
+---
+
+# 🛠️ Technologies Used
 
 | Technology | Purpose |
-| :--- | :--- |
-| 🐍 **Python** | Main programming language |
-| 📊 **Pandas** | Data manipulation and analysis |
-| 🔢 **NumPy** | Numerical calculations |
-| 📈 **Matplotlib** | Static visualizations |
-| 🎨 **Seaborn** | Statistical visualizations |
-| 🌐 **Requests** | API data fetching |
+|------------|---------|
+| 🐍 Python | Programming Language |
+| 📊 Pandas | Data Cleaning & Analysis |
+| 🔢 NumPy | Numerical Computing |
+| 📈 Matplotlib | Data Visualization |
+| 🎨 Seaborn | Statistical Visualization |
+| 🌐 Requests | API Integration |
 
 ---
 
-## 📁 Project Structure
+# 📂 Project Structure
+
+```
 COVID19_Data_Analytics/
 │
-├── covid_analysis.py # Main analysis script (everything in one file)
-├── covid_data.csv # Raw data from API
-├── cleaned_data.csv # Cleaned and processed dataset
-├── requirements.txt # Python dependencies
-├── README.md # Project documentation
+├── covid_analysis.py
+├── covid_data.csv
+├── cleaned_data.csv
+├── requirements.txt
+├── README.md
 │
-└── charts/ # Saved visualizations
-├── cases_over_time.png
-├── top10_countries_cases.png
-├── top10_countries_deaths.png
-├── deaths_vs_recoveries.png
-├── cases_distribution.png
-└── correlation_heatmap.png
-
-text
+└── charts/
+    ├── cases_over_time.png
+    ├── top10_countries_cases.png
+    ├── top10_countries_deaths.png
+    ├── deaths_vs_recoveries.png
+    ├── cases_distribution.png
+    └── correlation_heatmap.png
+```
 
 ---
 
-## 🚀 How to Run
+# 🚀 Getting Started
 
-### Prerequisites
-- Python 3.7 or higher installed on your system.
+## Prerequisites
 
-### Installation & Execution
+- Python 3.8 or later
 
-1. **Clone or download** this repository to your local machine.
+## Installation
 
-2. **Navigate to the project directory**:
-   ```bash
-   cd COVID19_Data_Analytics
-Install the required dependencies:
+Clone the repository
 
-bash
+```bash
+git clone https://github.com/rayansalah-27/COVID19_Data_Analytics.git
+```
+
+Move into the project folder
+
+```bash
+cd COVID19_Data_Analytics
+```
+
+Install dependencies
+
+```bash
 pip install -r requirements.txt
-Run the analysis script:
+```
 
-bash
+Run the project
+
+```bash
 python covid_analysis.py
-View the results:
+```
 
-All analysis output appears in the terminal/console.
+---
 
-Charts are automatically saved in the charts/ folder.
+# 📊 Project Workflow
 
-Cleaned data is saved as cleaned_data.csv.
+## 1️⃣ Data Collection
 
-📊 What This Project Does
-1. Data Collection
-Fetches COVID-19 data from the disease.sh API
+- Retrieve real-time COVID-19 data from the disease.sh API.
+- Save the raw dataset.
 
-Saves raw data to covid_data.csv
+---
 
-2. Data Cleaning
-Handles missing values (fills with 0 or appropriate values)
+## 2️⃣ Data Cleaning
 
-Removes duplicate records
+- Handle missing values.
+- Remove duplicate records.
+- Convert data types.
+- Create new calculated columns:
+  - Death Rate
+  - Recovery Rate
 
-Formats data types correctly
+---
 
-Creates calculated columns (death_rate, recovery_rate)
+## 3️⃣ Exploratory Data Analysis (EDA)
 
-Saves cleaned data to cleaned_data.csv
+The project explores:
 
-3. Exploratory Data Analysis (EDA)
-Displays dataset shape and column information
+- Dataset dimensions
+- Data types
+- Missing values
+- Summary statistics
+- Country comparisons
 
-Shows summary statistics
+---
 
-Calculates global totals (cases, deaths, recoveries, active cases)
+## 4️⃣ Statistical Analysis
 
-Identifies top countries by various metrics
+The following metrics are calculated:
 
-4. Statistical Analysis
-Total Confirmed Cases – Global total
+- Total Confirmed Cases
+- Total Deaths
+- Total Recoveries
+- Active Cases
+- Global Death Rate
+- Global Recovery Rate
+- Average Cases
+- Maximum Cases
+- Minimum Cases
 
-Total Deaths – Global total
+---
 
-Total Recovered – Global total
+# 📈 Visualizations
 
-Total Active Cases – Global total
+The project generates six visualizations.
 
-Global Death Rate – Deaths / Cases × 100
+| Visualization | Description |
+|---------------|-------------|
+| 📈 Cases Over Time | Global COVID-19 trends |
+| 📊 Top 10 Countries by Cases | Countries with highest confirmed cases |
+| 💀 Top 10 Countries by Deaths | Countries with highest deaths |
+| 🥧 Deaths vs Recoveries | Global comparison |
+| 📊 Cases Distribution | Distribution across countries |
+| 🔥 Correlation Heatmap | Relationship between COVID-19 metrics |
 
-Global Recovery Rate – Recovered / Cases × 100
+---
 
-Average Cases per Country
+# ❓ Analytical Questions
 
-Maximum Cases (one country)
+This project answers the following questions:
 
-Minimum Cases (one country)
+- Which country has the highest number of confirmed cases?
+- Which country has the highest number of deaths?
+- Which country has the highest recovery rate?
+- Which country has the highest death rate?
+- How have COVID-19 cases changed over time?
+- What is the relationship between confirmed cases and deaths?
+- Which countries were most affected?
+- What insights can be drawn from the data?
 
-5. Data Visualizations (6 Charts)
-Chart	Description
-📈 Cases Over Time	Line chart showing global trends for cases, deaths, and recoveries
-📊 Top 10 Cases	Horizontal bar chart of countries with highest confirmed cases
-📊 Top 10 Deaths	Horizontal bar chart of countries with highest deaths
-🥧 Deaths vs Recoveries	Pie chart comparing global deaths and recoveries
-📊 Cases Distribution	Histogram showing how cases are distributed across countries
-🔥 Correlation Heatmap	Heatmap showing relationships between different metrics
-6. Analytical Questions Answered
-Which country has the highest number of confirmed cases?
+---
 
-Answer provided with exact numbers.
+# 💡 Key Insights
 
-Which country has the highest number of deaths?
+Some insights generated include:
 
-Answer provided with exact numbers.
+- The United States recorded the highest number of confirmed COVID-19 cases.
+- The United States also reported the highest number of deaths.
+- Recovery cases significantly exceeded deaths worldwide.
+- A strong positive correlation exists between confirmed cases and deaths.
+- COVID-19 cases experienced several major peaks during the pandemic.
+- Data visualization makes global trends easier to understand.
 
-Which country has the highest recovery rate?
+---
 
-Answer provided with exact percentages.
+# 📷 Output
 
-Which country has the highest death rate?
+The project produces:
 
-Answer provided with exact percentages.
+- ✅ Cleaned Dataset
+- ✅ Statistical Analysis
+- ✅ Six Data Visualizations
+- ✅ Analytical Insights
 
-How have COVID-19 cases changed over time?
+---
 
-Visualized in the line chart with peak dates identified.
+# 📚 Skills Demonstrated
 
-What is the relationship between confirmed cases and deaths?
+- Python Programming
+- Data Cleaning
+- Data Wrangling
+- Exploratory Data Analysis (EDA)
+- Statistical Analysis
+- API Integration
+- Data Visualization
+- Data Storytelling
 
-Correlation coefficient calculated and explained.
+---
 
-Which countries were most affected by COVID-19?
+# 👨‍💻 Author
 
-Top 5 countries listed with their numbers.
+**Rayan Salah**
 
-What insights can be drawn from the data?
+🔗 GitHub  
+https://github.com/rayansalah-27
 
-Comprehensive summary of key findings.
+🔗 LinkedIn  
+https://www.linkedin.com/in/rayan-salah-013043375
 
-7. Key Insights Generated
-Global Impact: Total cases, deaths, and recoveries worldwide.
+---
 
-Worst Affected Countries: Which countries had the highest impact.
+# ⭐ If you found this project useful, consider giving it a Star.
 
-Death Rate Analysis: Countries with the highest death rates.
+---
 
-Recovery Rate Analysis: Countries with the highest recovery rates.
+# 📄 License
 
-Trend Analysis: How the pandemic progressed over time.
-
-Correlation Insights: Relationship between different metrics.
-
-Recommendations: Actionable suggestions based on the findings.
-
-🔍 Sample Output (Terminal)
-When you run the script, you'll see output like this:
-
-text
-======================================================================
-🦠 COVID-19 DATA ANALYTICS PROJECT
-======================================================================
-
-📊 Starting analysis pipeline...
-
-📥 STEP 1: Fetching data from API...
-   ✅ Successfully fetched data for 220 countries
-
-🧹 STEP 2: Data Cleaning...
-   ✅ Selected 13 columns
-   ✅ Missing values handled
-   ✅ 0 duplicates removed
-   ✅ Calculated death_rate and recovery_rate
-
-📊 STEP 3: Exploratory Data Analysis...
-   📋 Dataset Overview:
-      Total Countries: 220
-      Total Columns: 15
-
-   🌍 Global Totals:
-      Total Cases: 500,000,000+
-      Total Deaths: 6,500,000+
-      Total Recovered: 450,000,000+
-      Global Death Rate: 1.30%
-
-[... continues with full analysis ...]
-📈 Visualizations Preview
-Chart	Description
-cases_over_time.png	Line chart with 3 lines (cases, deaths, recoveries) showing global trends
-top10_countries_cases.png	Horizontal bar chart with 10 bars, color-coded from yellow to purple
-top10_countries_deaths.png	Horizontal bar chart with 10 bars, color-coded in red shades
-deaths_vs_recoveries.png	Pie chart with 2 slices (green for recovered, red for deaths)
-cases_distribution.png	Histogram showing distribution with mean and median lines
-correlation_heatmap.png	9x9 heatmap showing correlations between different metrics
-
-💡 Key Insights Summary
-Global Impact
-Total Cases: Millions of confirmed cases worldwide
-
-Total Deaths: Hundreds of thousands of deaths
-
-Death Rate: Varies significantly by country
-
-Recovery Rate: Varies significantly by country
-
-Most Affected Countries
-The United States leads in both cases and deaths
-
-Several European and Asian countries have high numbers
-
-Some smaller countries have extremely high death rates
-
-Trends
-Cases peaked during specific periods (winter months)
-
-Strong positive correlation between cases and deaths
-
-Recovery rates have improved over time
-
-
-
-
-👤 Author
-Your Name
-🔗https://github.com/rayansalah-27
-🔗https://www.linkedin.com/in/rayan-salah-013043375
-
-
-
-📝 License
-This project is open-source and available for educational purposes.
+This project is licensed under the MIT License and is intended for educational and portfolio purposes.
